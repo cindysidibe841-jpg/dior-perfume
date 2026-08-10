@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOIR &amp; AMBRE — Fine Perfumery</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- External stylesheet -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Welcome / promo popup (built by script.js) -->
+<div id="welcomeModal" class="modal-overlay hidden">
+  <div class="modal">
+    <button class="modal-close" id="closeWelcome" aria-label="Close">&times;</button>
+    <p class="modal-eyebrow">First visit?</p>
+    <h3>Welcome to Noir &amp; Ambre</h3>
+    <p>Join our list and receive <strong>10% off</strong> your first bottle, plus early access to
+       limited fixtures and seasonal blends.</p>
+    <form id="promoForm" class="modal-form">
+      <input type="email" id="promoEmail" placeholder="Your email address" required>
+      <button type="submit">Claim 10%</button>
+    </form>
+    <p class="modal-fineprint" id="promoMsg"></p>
+  </div>
+</div>
+
+<!-- ============= NAVIGATION (centered) ============= -->
+<header class="site-header">
+  <div class="nav-wrap">
+    <nav class="site-nav">
+      <a href="#home">Home</a>
+      <a href="#notes">Notes</a>
+      <a href="#ritual">Ritual</a>
+      <a href="#collection">Collection</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============= HERO ============= -->
+<section id="home" class="hero">
+  <div class="hero-frame">
+    <p class="hero-eyebrow">A Maison of Modern Perfumery</p>
+    <h1 class="hero-title">NOIR <span class="amp">&amp;</span> AMBRE</h1>
+    <p class="hero-sub">Scents composed like memory — dark woods, warm resin, quiet skin.</p>
+    <a href="#collection" class="btn-ghost">Discover the Collection</a>
+  </div>
+</section>
+
+<!-- ============= NOTES: unordered list + two images ============= -->
+<section id="notes" class="section notes-section">
+  <div class="section-grid">
+    <div class="notes-text">
+      <p class="eyebrow">The Composition</p>
+      <h2>Five Notes, One Signature</h2>
+      <p class="lead">Every Noir &amp; Ambre bottle is built from the same five-note skeleton,
+         reweighted for each fragrance in the line.</p>
+      <ul class="note-list">
+        <li><strong>Bergamot</strong> — a bright, citrus opening that fades within minutes.</li>
+        <li><strong>Jasmine Sambac</strong> — hand-picked at night, when the petals are most fragrant.</li>
+        <li><strong>Oud Wood</strong> — smoked and aged, the dark spine of every blend.</li>
+        <li><strong>Amber Resin</strong> — warms the composition and helps it last on skin.</li>
+        <li><strong>White Musk</strong> — the final, almost-silent note that lingers longest.</li>
+      </ul>
+    </div>
+    <div class="notes-images">
+      <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800&auto=format&fit=crop"
+           alt="Amber perfume bottle on dark stone">
+      <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=800&auto=format&fit=crop"
+           alt="Perfume bottle beside dried botanicals">
+    </div>
+  </div>
+</section>
+
+<!-- ============= RITUAL: ordered list ============= -->
+<section id="ritual" class="section ritual-section">
+  <p class="eyebrow center">How To Wear It</p>
+  <h2 class="center">The Application Ritual</h2>
+  <ol class="ritual-list">
+    <li><span>01</span> Warm the nozzle in your palm for a few seconds before the first spray.</li>
+    <li><span>02</span> Apply to pulse points — wrists, the base of the throat, behind each ear.</li>
+    <li><span>03</span> Never rub your wrists together; it breaks down the top notes early.</li>
+    <li><span>04</span> Let the fragrance dry naturally for sixty seconds before dressing.</li>
+    <li><span>05</span> Re-apply lightly after eight hours rather than over-spraying at once.</li>
+  </ol>
+</section>
+
+<!-- ============= COLLECTION: price table ============= -->
+<section id="collection" class="section table-section">
+  <h2 class="table-heading">The Collection &amp; Price List</h2>
+  <table class="price-table">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Fragrance</th>
+        <th>Family</th>
+        <th>Size</th>
+        <th>Price (KES)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Noir Oud</td>
+        <td>Woody &amp; Smoked</td>
+        <td>50 ml</td>
+        <td>6,500</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Ambre Nuit</td>
+        <td>Amber &amp; Resin</td>
+        <td>50 ml</td>
+        <td>6,900</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Jasmin Sambac</td>
+        <td>White Floral</td>
+        <td>50 ml</td>
+        <td>7,200</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Musc Blanc</td>
+        <td>Clean Musk</td>
+        <td>30 ml</td>
+        <td>4,800</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============= GALLERY: images + video grid (min 2x2) ============= -->
+<section id="gallery" class="section gallery-section">
+  <p class="eyebrow center">Inside the Maison</p>
+  <h2 class="center">Gallery</h2>
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=800&auto=format&fit=crop"
+         alt="Rows of perfume bottles on a shelf">
+    <img src="https://images.unsplash.com/photo-1615368144592-05e6b3a1f7d6?q=80&w=800&auto=format&fit=crop"
+         alt="Perfumer blending oils in a glass beaker">
+    <div class="gallery-video">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Noir & Ambre — Behind the Blend"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+    <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?q=80&w=800&auto=format&fit=crop"
+         alt="Close up of amber perfume liquid and bottle cap">
+  </div>
+  <p class="gallery-note">Swap the sample video above for your own footage — replace the
+     <code>src</code> on the <code>&lt;iframe&gt;</code> in <code>index.html</code>.</p>
+</section>
+
+<!-- ============= CONTACT / SIGNUP FORM → Supabase ============= -->
+<section id="contact" class="section form-section">
+  <div class="form-card">
+    <p class="eyebrow">Stay In Scent</p>
+    <h2>Join the Maison List</h2>
+    <p class="lead">Tell us a little about you and we'll notify you when new fixtures drop.</p>
+
+    <form id="signupForm" class="signup-form">
+      <label for="fullName">Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. 0712 345 678" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select one</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+        <option value="prefer_not_to_say">Prefer not to say</option>
+      </select>
+
+      <button type="submit" id="signupSubmit">Submit</button>
+      <p id="signupStatus" class="form-status"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Noir &amp; Ambre. All rights reserved.</p>
+</footer>
+
+<!-- Supabase client (loaded from CDN, runs in the visitor's browser) -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body>
+</html>
